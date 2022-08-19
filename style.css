@@ -1,0 +1,146 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+ .header{
+    background-color: royalblue;
+ }   
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-links{
+    flex: 1;
+    color: black;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: palevioletred;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.visit-box{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+.visit-box:hover{
+    border: 1px solid palevioletred;
+    background-color: palevioletred;
+    transition: 1s;
+}
+/* what we offer */
+.offer{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height:22px;
+    padding: 10px;
+}
+.row-offer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+
+}
+.offer-col{
+    background: palevioletred;
+    border-radius: 10px;
+    margin-right: 2.5%;
+    padding: 20px 12px;
+    margin-bottom: 30px;
+    width: 600px;
+    height: 400px;
+}
+
+.img-offer{
+    width: auto;
+    height: 250px;
+}
+
+h3{
+    margin: 10px 0;
+}
+.offer-col:hover{
+    box-shadow: 0 0 50px royalblue;
+}
+
+footer{
+    background-color: royalblue;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
